@@ -1,0 +1,13 @@
+li > h3, li > a > img{
+    padding: 20px;
+}
+li > a > img{
+    width: 300px;
+    height: 483px;
+}
+li{
+    list-style: none;
+}
+ul{
+    display: flex;
+}
