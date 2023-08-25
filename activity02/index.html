@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Yu-Gi-Oh! Wiki!</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!--
+            Seção destinada a conter o conteúdo introdutório da página
+            Neste momento, contém apenas o título
+        -->
+        <h1>Yu-Gi-Oh! Wiki!</h1>
+    </header>
+    <main>
+        <!--
+            Conteúdo principal da página
+        -->
+        <hr>
+        <section class="banished-cards-showcase">
+            <!--
+                Seção que destina-se a mostrar os cards
+            -->
+            <h2>Cartas banidas</h2>
+            <ul>
+                <li>
+                    <a href="https://yugioh.fandom.com/wiki/Pot_of_Greed" target="_blank">
+                        <img src="https://cdn.cardsrealm.com/images/cartas/bp02-battle-pack-2-war-of-the-giants/en/med/pot-of-greed-en129.png?2521"
+                            alt="Carta pote da ganância. Um pote de rosto verde, com um sorriso maquiavélico.">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://yugioh.fandom.com/wiki/Graceful_Charity" target="_blank">
+                        <img src="https://m.media-amazon.com/images/I/5116uzE-P-L.jpg"
+                            alt="Carta caridade graciosa. Um mulher de aparência angelical, com uma carta de luz sobre suas mãos.">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://yugioh.fandom.com/wiki/Painful_Choice" target="_blank">
+                        <img src="https://cdn.cardsrealm.com/images/cartas/db1-dark-beginning-1/en/med/painful-choice-en033.png?7143"
+                            alt="Carta decisão dolorosa. Varias pessoas de joelho ou se mostrando incomodadas, perante a figura de um soldado, com a muralha de um castelo de fundo.">
+                    </a>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section class="additional-info-on-banned-cards">
+            <!--
+                Esta seção dedica-se a mostrar informações adicionais sobre as cartas banidas,
+                sendo elas até o momento: nome, coleção e raridade
+            -->
+            <h2>Informação adicional</h2>
+            <table border="2px">
+                <!--Tag caption, utilizada para conportar o título da tabela-->
+                <caption></caption>
+                <thead>
+                    <!--Cabeçalho da tabela-->
+                    <tr>
+                        <th>Nome</th>
+                        <th>Coleção</th>
+                        <th>Raridade</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!--Corpo da tabela-->
+                    <tr>
+                        <td>Pot of greed</td>
+                        <td>Legend of Blue Eyes White Dragon</td>
+                        <td><b>Rare</b></td>
+                    </tr>
+                    <tr>
+                        <td>Graceful charity</td>
+                        <td>Dark Beginning 2</td>
+                        <td><b>Rare</b></td>
+                    </tr>
+                    <tr>
+                        <td>Painful choice</td>
+                        <td>Dark Beginning 1</td>
+                        <td><b>Common</b></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+        <article class="user-registration">
+            <h2>Cadastre-se no site</h2>
+            <form action="https://www.w3schools.com/action_page.php">
+                <!--
+                    Por não haver há necessidade de uma tag de título, sendo ao invés, 
+                    utilizada uma tag label como referência para o campo input correspondente. 
+                    É usada a tag div para fazer uma divisão apropriada entre os inputs e labels
+                    correspondentes, ao invés de usar tags sections
+                -->
+                <div class="name-field">
+                    <label rel="username"> Name: </label>
+                    <input type="text" name="username" id="username" size="15" required>
+                </div>
+                <div class="field-of-interest">
+                    <label rel="user interest">Interest: </label>
+                    <input type="text" name="user-interest" id="user-interest" value="Yu-Gi-Oh! news" readonly>
+                </div>
+                <div class="number-of-wins-field">
+                    <label rel="number-of-wins">Number of wins: </label>
+                    <input type="number" min="25000" max="30000" name="number-of-wins" id="number-of-wins" required>
+                </div>
+                <div>
+                    <p>Please select your level of knowledge of the game rules</p>
+                    <label rel="beginner-level-field">Beginner</label>
+                    <input type="radio" value="Beginner" id="beginner-level-field" name="level-of-knowledge-of-the-rules">
+                    <br>
+                    <label rel="intermediary-level-field">Intermediary</label>
+                    <input type="radio" value="Intermediary" id="intermediary-level-field" name="level-of-knowledge-of-the-rules">
+                    <br>
+                    <label rel="advanced-level-field">Advanced</label>
+                    <input type="radio" value="Advanced" id="advanced-level-field" name="level-of-knowledge-of-the-rules">
+                    <br>
+                </div>
+                <div>
+                    <p>Please select which media you play Yu-Gi-Oh!</p>
+                    <label for="media-tcg">TCG</label>
+                    <input type="checkbox" value="tcg" name="media-tcg" id="media-tcg">
+                    <br>
+                    <label for="media-master_duel">Master Duel</label>
+                    <input type="checkbox" value="master-duel" name="media-master_duel" id="media-master_duel">
+                    <br>
+                    <label for="media-duel-links">Duel Links</label>
+                    <input type="checkbox" value="Duel Links" name="media-duel-links" id="media-duel-links">
+                    <br>
+                    <label for="media-other">Other media</label>
+                    <input type="checkbox" value="other-media" name="media-other" id="media-other">
+                    <br>
+                </div>
+                <div>
+                    <input type="submit">
+                </div>
+            </form>
+        </article>
+    </main>
+</body>
+
+</html>
