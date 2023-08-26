@@ -1,4 +1,5 @@
 # LMS
 Markup and Scripting Language Course Activities
 
-activity01 diz respeito a atividade de: Introdução ao HTML, parte 01
+activity01 diz respeito a atividade de: INTRODUÇAO AO HTML, PARTE 1
+activity02 diz respeito a atividade de: INTRODUÇAO AO HTML, PARTE 2

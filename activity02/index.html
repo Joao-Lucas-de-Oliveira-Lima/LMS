@@ -91,7 +91,7 @@
                     Por não haver há necessidade de uma tag de título, sendo ao invés, 
                     utilizada uma tag label como referência para o campo input correspondente. 
                     É usada a tag div para fazer uma divisão apropriada entre os inputs e labels
-                    correspondentes, ao invés de usar tags sections
+                    correspondentes
                 -->
                 <div class="name-field">
                     <label rel="username"> Name: </label>
@@ -105,7 +105,7 @@
                     <label rel="number-of-wins">Number of wins: </label>
                     <input type="number" min="25000" max="30000" name="number-of-wins" id="number-of-wins" required>
                 </div>
-                <div>
+                <div class="knowledge-level-field">
                     <p>Please select your level of knowledge of the game rules</p>
                     <label rel="beginner-level-field">Beginner</label>
                     <input type="radio" value="Beginner" id="beginner-level-field" name="level-of-knowledge-of-the-rules">
@@ -117,7 +117,7 @@
                     <input type="radio" value="Advanced" id="advanced-level-field" name="level-of-knowledge-of-the-rules">
                     <br>
                 </div>
-                <div>
+                <div class="field-of-media-played">
                     <p>Please select which media you play Yu-Gi-Oh!</p>
                     <label for="media-tcg">TCG</label>
                     <input type="checkbox" value="tcg" name="media-tcg" id="media-tcg">
@@ -126,18 +126,27 @@
                     <input type="checkbox" value="master-duel" name="media-master_duel" id="media-master_duel">
                     <br>
                     <label for="media-duel-links">Duel Links</label>
-                    <input type="checkbox" value="Duel Links" name="media-duel-links" id="media-duel-links">
+                    <input type="checkbox" value="duel-links" name="media-duel-links" id="media-duel-links">
                     <br>
                     <label for="media-other">Other media</label>
                     <input type="checkbox" value="other-media" name="media-other" id="media-other">
                     <br>
                 </div>
-                <div>
+                <br>
                     <input type="submit">
-                </div>
             </form>
         </article>
     </main>
+    <!--
+        Tag de rodapé
+    -->
+    <footer>
+        <hr>
+        <h2>Acesse</h2>
+        <a href="https://www.yugioh-card.com/en/" target="_blank">
+            <img src="https://i.pinimg.com/564x/19/c4/7c/19c47c0e03d5bc0ae0fdb73eaea148d9.jpg" alt="Logo marca da franquia YUGIOH" id="yugioh-logo">
+        </a>
+    </footer>
 </body>
 
 </html>
